@@ -147,8 +147,8 @@ current_run -synthesis [get_runs synth_1]
 set_property strategy "Vivado Implementation Defaults" [get_runs impl_1]
 
 set obj [get_runs impl_1]
-set_property "steps.write_bitstream.args.readback_file" "0" $obj
-set_property "steps.write_bitstream.args.verbose" "0" $obj
+set_property "steps.write_device_image.args.readback_file" "0" $obj
+set_property "steps.write_device_image.args.verbose" "0" $obj
 
 # set the current impl run
 current_run -implementation [get_runs impl_1]
